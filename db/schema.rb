@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180409133936) do
+ActiveRecord::Schema.define(version: 20180409153013) do
 
   create_table "associations", force: :cascade do |t|
     t.string "nom"
@@ -23,20 +23,24 @@ ActiveRecord::Schema.define(version: 20180409133936) do
   create_table "contents", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer "translations_id"
-    t.index ["translations_id"], name: "index_contents_on_translations_id"
   end
 
-  create_table "languages", primary_key: "code", force: :cascade do |t|
+  create_table "languages", id: false, force: :cascade do |t|
     t.string "label"
+    t.string "code"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["code"], name: "index_languages_on_code"
   end
 
   create_table "translations", force: :cascade do |t|
     t.text "text"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "content_id"
+    t.integer "language_id"
+    t.index ["content_id"], name: "index_translations_on_content_id"
+    t.index ["language_id"], name: "index_translations_on_language_id"
   end
 
 end
