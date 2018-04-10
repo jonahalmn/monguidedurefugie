@@ -21,6 +21,8 @@ header {
 }
 
 footer {
+  position: absolute;
+  bottom: 0;
   margin-left: auto;
   margin-right: auto;
   width: 100vw;
@@ -35,6 +37,6 @@ footer {
   }
   li {
     display: inline-block;
-    margin: 30px;
+    margin: 50px;
   }
 }
