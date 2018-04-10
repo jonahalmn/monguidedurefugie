@@ -1,0 +1,39 @@
+.form {
+  width: 70%;
+  margin: 0 auto;
+
+  h2 {
+    border-bottom: solid #ffeb4d 3px;
+    padding-bottom: 5px;
+    margin-bottom: 30px;
+  }
+
+  input {
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    border-bottom: solid #87867C 3px;
+    margin: 2em 0;
+  }
+
+  input:focus {
+    border-bottom: solid 3px #ffeb4d;
+    border-radius: 0;
+  }
+
+  .actions {
+    text-align: center;
+  }
+
+  .actions input {
+    padding:0.5em 1em;
+    background-color: rgb(255,232,0);
+    border: none;
+  }
+
+  #user_remember_me {
+    border-radius: 0;
+  }
+
+
+}
