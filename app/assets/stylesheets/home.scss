@@ -35,3 +35,30 @@ h4 {
 }
 
 // V2
+.start-page {
+  margin: 3em auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: baseline;
+  width:60vw;
+
+  h1 {
+    font-size: 1.3em;
+    width:100%;
+    text-align: center;
+    margin: auto;
+  }
+  p {
+    font-size: 0.9em;
+    margin: auto;
+  }
+  .start-btn {
+    width:100%;
+    margin: 1em auto 0;
+    a {
+      padding:0.5em 1em;
+      background-color: rgb(255,232,0);
+    }
+  }
+}
