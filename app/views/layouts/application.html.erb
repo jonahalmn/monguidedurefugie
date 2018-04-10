@@ -10,17 +10,24 @@
 
   <body>
 
-    <section>
+    <header>
       <div>
-        <%= image_tag('logo.png') %>
+        <%= link_to image_tag('logo.png'), root_path %>
       </div>
-    </section>
+      <% if !current_page?(controller: 'application', action: 'index') %>
+        <div class="header-links">
+          <%= link_to 'RECHERCHER', root_path %>
+          <%= link_to 'MON PROFIL', root_path %>
+          <%= link_to 'FRANÇAIS', root_path %>
+        </div>
+      <% end %>
+    </header>
 
     <%= yield %>
 
     <footer>
       <ul>
-        <li>leguidedurefugie.com</li>
+        <li><%= link_to 'leguidedurefugie.com', home_path %></li>
         <li>télécherger le guide</li>
         <li>tutoriel</li>
         <li>contact</li>

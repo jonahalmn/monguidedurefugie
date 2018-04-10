@@ -23,14 +23,14 @@ ActiveRecord::Schema.define(version: 20180409153013) do
   create_table "contents", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "translations_id"
+    t.index ["translations_id"], name: "index_contents_on_translations_id"
   end
 
-  create_table "languages", id: false, force: :cascade do |t|
+  create_table "languages", primary_key: "code", force: :cascade do |t|
     t.string "label"
-    t.string "code"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["code"], name: "index_languages_on_code"
   end
 
   create_table "translations", force: :cascade do |t|
