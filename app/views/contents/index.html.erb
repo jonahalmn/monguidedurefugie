@@ -1,12 +1,14 @@
 <div class="question">
   <form>
     <div class="sex">
-      <label for="sex_question">1 <i class="arrowquestion"></i> Sexe*</label></br>
-      <input type="radio" name="sexM" value="M" checked>Homme
-      <input type="radio" name="sexF" value="F" checked>Femme
-    </div>
+      <p class="sex_question">1 Sexe*</p>
+      <input type="radio" name="sex" value="H" checked >
+      <label for=Man>Masculin</label>
+      <input type="radio" name="sex" value="F" >
+      <label for=Woman>Féminin</label>
+        </div>
     <div class="nationality">
-      <label for="nationality"> 2 Nationalité</label></br>
+      <p class="nationality">2 Nationalité</p>
       <select id="choose_nationality" class="choose_nationality">
             <option selected >Choisis ta nationalité</option>
             <option value="afghan">Afghan</option>
@@ -204,10 +206,9 @@
 
       </select>
     </div>
-      <div class="birthday">
         <div class="birthdaydate">
-        <label>3 Date de naissance</label></br>
-        <input class="birthdayinput" id="birthdaydate" placeholder="JJ/MM/AAAA" type="date">
+        <p class="Birthdate">3 Date de naissance*</p>
+        <input class="birthdayinput" id="birthdaydate" placeholder="JJ/MM/AAAA" type="date" required=true>
       </div>
     </div>
   </form>

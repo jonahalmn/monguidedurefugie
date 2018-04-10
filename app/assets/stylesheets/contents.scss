@@ -1,7 +1,15 @@
-.arrowquestion{
-  filter: invert(1);
-}
+
 .question {
   width:30vw;
+  height: 60vh;
   margin: auto;
+
+  div{
+    font-size: 24px;
+    padding: 20px;
+    input, select,label {
+      font-size: 20px;
+      padding: 0 20px;
+    }
+  }
 }
