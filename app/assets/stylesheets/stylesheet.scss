@@ -1,0 +1,85 @@
+
+@font-face {
+    font-family: 'grogrobold';
+    src: url('hkgrotesk-bold-webfont.woff2') format('woff2'),
+         url('hkgrotesk-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'grogromedium';
+    src: url('hkgrotesk-medium-webfont.woff2') format('woff2'),
+         url('hkgrotesk-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+ @import url('https://fonts.googleapis.com/css?family=Lateef');
+
+body {
+  font-family: 'grogromedium';
+  color: #1F1E20;
+}
+
+a {
+  color: #1F1E20;
+}
+
+a:hover {
+  border-bottom: 3px solid #1F1E20;
+  color: #1F1E20;
+}
+
+h3 {
+  font-size: 45px;
+
+}
+
+h4 {
+  font-size: 20px;
+  color: #87867C;
+  text-decoration: none;
+}
+
+.child {
+  margin-top: 50px;
+  text-align: center;
+  margin-bottom: 150px;
+}
+
+.langue {
+  color: #444444;
+  margin-bottom: 30px;
+}
+
+.langue:hover {
+  color: #1F1E20;
+}
+
+.arab {
+  font-family: Lateef;
+}
+
+.arab h3 {
+  font-size: 50px;
+}
+
+.arab h4 {
+  font-size: 35px;
+}
+
+footer {
+  margin-left: auto;
+  margin-right: auto;
+  width: 85%;
+  text-align: center;
+  text-transform: uppercase;
+  border-top: 5px black solid;
+  font-family: 'grogrobold';
+}
+
+li {
+  display: inline-block;
+  margin: 30px;
+}
